@@ -8,7 +8,7 @@ const webpackBaseConfig = {
   },
   resolve:{
     // 导入的模块没有拓展名，就按指定的拓展名一一寻找
-    extensions:['.js','jsx']
+    extensions:['.js','.jsx']
   },
   module: {
     rules: [
