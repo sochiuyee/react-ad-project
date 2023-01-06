@@ -2,10 +2,18 @@
   "env": {
     "browser": true
   },
+  "parser": "@typescript-eslint/parser",
   "extends": ["airbnb"],
   "rules": {
     "indent": ["error", 4],
     "react/jsx-indent": ["error", 4],
-    "react/prefer-stateless-function": "off"
-  }
+    "react/prefer-stateless-function": "off",
+    "react/jsx-filename-extension": ["error",{"extensions": [".js", ".jsx", ".ts", ".tsx"]}],
+    "no-unused-vars": "warn",
+    "no-use-before-define": "off"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ]
 }
