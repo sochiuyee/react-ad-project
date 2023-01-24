@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 
 import RouteComponent from './routes';
 
-import './style.scss';
+import 'antd/dist/antd.css';
 
 ReactDOM.render(<RouteComponent />, document.getElementById('root'));
