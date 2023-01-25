@@ -10,7 +10,8 @@
     "react/prefer-stateless-function": "off",
     "react/jsx-filename-extension": ["error",{"extensions": [".js", ".jsx", ".ts", ".tsx"]}],
     "no-unused-vars": "warn",
-    "no-use-before-define": "off"
+    "no-use-before-define": "off",
+    "import/no-extraneous-dependencies": "off"
   },
   "plugins": [
     "react",
