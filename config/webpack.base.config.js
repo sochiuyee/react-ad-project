@@ -1,5 +1,9 @@
 const path = require('path');
 
+// 获取环境变量
+const devMode = process.env.NODE_ENV !== 'production';
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 const webpackBaseConfig = {
     entry: path.join(__dirname, '../src/index.jsx'),
     output: {
@@ -23,7 +27,11 @@ const webpackBaseConfig = {
             {
                 test: /\.(sc|c)ss/,
                 // 处理sass文件
-                use: ['style-loader', 'css-loader', 'sass-loader'],
+                use: [
+                    devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader',
+                ],
             },
         ],
     },
