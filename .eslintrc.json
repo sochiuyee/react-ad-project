@@ -13,8 +13,21 @@
     "no-use-before-define": "off",
     "import/no-extraneous-dependencies": "off"
   },
+  "settings": {
+    "import/resolver":{
+      "alias":{
+        "map":[
+          ["pages", "./src/pages"],
+          ["@utils", "./src/utils"],
+          ["@components", "./src/components"]
+        ],
+        "extensions":[".ts",".tsx",".js",".jsx",".json",".d.ts"]
+      }
+    }
+  },
   "plugins": [
     "react",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "eslint-plugin-import"
   ]
 }
