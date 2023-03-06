@@ -1,0 +1,23 @@
+.header-component-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    background:url('//www.baidu.com/img/pcdoodle_2a77789e1a67227122be09c5be16fe46.png');
+    width: 91px;
+    height: 40px;
+    background-size: 100%;
+    margin-right: 16px;
+  }
+  .menu {
+    width: 648px;
+    padding-top: 4px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+  }
+}

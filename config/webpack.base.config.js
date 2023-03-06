@@ -12,11 +12,12 @@ const webpackBaseConfig = {
     },
     resolve: {
         // 导入的模块没有拓展名，就按指定的拓展名一一寻找
-        extensions: ['.ts', '.js', '.jsx', '.tsx'],
+        extensions: ['.ts', '.js', '.jsx', '.tsx', '.scss', '.css'],
         alias: {
             pages: path.join(__dirname, '../src/pages'),
             '@utils': path.join(__dirname, '../src/utils/'),
             '@components': path.join(__dirname, '../src/components'),
+            '@':path.join(__dirname, '../src/')
         },
     },
     module: {
