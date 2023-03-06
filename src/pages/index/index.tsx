@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import utilsIndex from '@utils/index';
 
+import Header from '@components/Header';
+
 class IndexPage extends Component {
     componentDidMount() {
         const id = utilsIndex.getUrlParam('id');
@@ -10,7 +12,7 @@ class IndexPage extends Component {
     render() {
         return (
             <div>
-                hello pages index
+                <Header />
             </div>
         );
     }

@@ -19,7 +19,8 @@
         "map":[
           ["pages", "./src/pages"],
           ["@utils", "./src/utils"],
-          ["@components", "./src/components"]
+          ["@components", "./src/components"],
+          ["@", "./src"]
         ],
         "extensions":[".ts",".tsx",".js",".jsx",".json",".d.ts"]
       }

@@ -27,7 +27,7 @@ const webpackConfigDev = {
             url: `http://localhost:${PORT}/#/`,
         }),
     ],
-    devtool: 'eval-source-map', // 定位到错误在原代码的位置，不会产生单独的文件，但是可以显示行和列
+    devtool: 'cheap-source-map', // 定位到错误在原代码的位置，不会产生单独的文件，但是可以显示行和列
     devServer: {
         // proxy: {
         //     '/': 'http://127.0.0.1:4523/m1/883443-0-default/',
